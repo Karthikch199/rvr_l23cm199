@@ -1,0 +1,57 @@
+import matplotlib.pyplot as plt
+import numpy as np
+subjects=np.array(["CS","AI","OS","SE","DAA","CS LAb","AI LAB","DAA LAB","PHP LAB","ETHICS"])
+marks=np.array([67,66,65,58,68,96,98,88,89,78])
+s=plt.figure()
+s.set_figwidth(10)
+s.set_figheight(5)
+plt.title("IV sem subjects marks")
+plt.xlabel("subjects")
+plt.ylabel("marks")
+bars=plt.bar(subjects,marks)
+bars[0].set_color('red')
+bars[1].set_color('blue')
+bars[2].set_color('green')
+bars[3].set_color('pink')
+bars[4].set_color('yellow')
+bars[5].set_color('red')
+bars[6].set_color('blue')
+bars[7].set_color('yellow')
+bars[8].set_color('orange')
+bars[9].set_color('purple')
+plt.show()
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+sub=np.array(["CS","AI","OS","SE","DAA"])
+im=np.array([67,66,65,58,68])
+sm=np.array([58,76,66,62,72])
+am=np.array([52,54,56,58,60])
+sam=np.array([57,67,66,65,78])
+plt.bar(sub,im,color='b')
+plt.bar(sub,sm,bottom=im,color='r')
+plt.bar(sub,am,bottom=im+sm,color='g')
+plt.bar(sub,sam,bottom=im+sm+am,color='y')
+plt.legend(["Immaniyelu","Sathish","Ajay","satwik"])
+plt.title("IV th sem marks 3 students")
+plt.xlabel("SUBJECTS")
+plt.ylabel("MARKS")
+plt.show()
+
+
+
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.arange(5)
+im=[24,25,22,26,28]
+em=[55,57,44,42,57]
+plt.bar(x-0.2, im, 0.40) 
+plt.bar(x+0.2, em, 0.40) 
+plt.legend(["Internals","Externals"])
+plt.show()
