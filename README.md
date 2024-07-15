@@ -1,1 +1,1 @@
-# rvr_l23cm199
+this file contains data warehousing concepts and data mining techniques
